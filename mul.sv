@@ -4,7 +4,7 @@ module full_add #(parameter N=16);
     input [N-1:0] input2,
     output [N-1:0] mul_o);
   
-  xor (mul_o, input1, input2);
+  assign mul_o - input1 + input2;
    
 endmodule
 
